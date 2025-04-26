@@ -11,6 +11,7 @@ function App() {
         <Route path={"/clubs"} element={<Clubs />}></Route>
         <Route path={"/gallery"} element={<Gallery />}></Route>
       </Routes>
+      {/* */}
     </>
   );
 }
