@@ -10,10 +10,14 @@ const Menu = () => {
   const loginClick = () => {
     nav("/login");
   };
+
+  const homepage = () => {
+    nav("/");
+  };
   return (
     <section>
       <div className={styles.Menu_cont}>
-        <p>Infohub</p>
+        <p onClick={homepage}>Infohub</p>
         <nav>
           <ul className={styles.Menu_list}>
             <li>
