@@ -11,13 +11,13 @@ const Menu = () => {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#about">Clubs</a>
+              <a href="/clubs">Clubs</a>
             </li>
             <li>
-              <a href="#services">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="/gallery">Gallery</a>
             </li>
           </ul>
         </nav>

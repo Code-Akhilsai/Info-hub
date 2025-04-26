@@ -92,9 +92,9 @@
 .Intro_subtitle {
   font-family: sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.2rem;
   color: white;
-  line-height: 1.8; /* Adds spacing between lines */
+  line-height: 1.9; /* Adds spacing between lines */
   margin-top: -40px;
   text-align: justify; /* Makes the text look neat and aligned */
 }
@@ -109,7 +109,7 @@
   width: 100%; /* Adjusts the width */
   max-width: 600px; /* Limits the maximum width */
   height: 600px; /* Sets the height of the container */
-  margin: 20px auto; /* Centers the container */
+  margin: 10px auto; /* Centers the container */
   overflow: hidden; /* Ensures the content doesn't overflow */
 }
 
@@ -141,7 +141,7 @@
   font-family: sans-serif;
   font-size: 2.9rem;
   font-weight: bold;
-  margin-top: 15%;
+  margin-top: 13%;
   color: white;
   text-align: center;
 }
@@ -173,9 +173,201 @@
 /*featured*/
 .featured_title {
   font-family: sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  margin-top: 15%;
+  margin-top: 13%;
   color: white;
   text-align: center;
+}
+.featured_container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.featured_image_container {
+  width: 99%;
+  height: 600px;
+  margin: 2% auto;
+  position: relative; /* Ensure the dots are positioned relative to this container */
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.featured_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits within the container */
+  border-radius: 20px;
+}
+
+.featured_dots {
+  display: flex;
+  flex-direction: column; /* Arrange dots vertically */
+  justify-content: center; /* Center dots vertically */
+  position: absolute; /* Position dots relative to the image container */
+  right: 10px; /* Place dots on the right side of the image */
+  top: 50%; /* Center dots vertically in the container */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  gap: 10px; /* Add spacing between dots */
+  z-index: 10; /* Ensure dots are above the image */
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: gray; /* Change to white for better visibility */
+  border: 1px solid black; /* Optional: Add a border for contrast */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+  background-color: gray; /* Change hover color for better feedback */
+}
+
+.active_dot {
+  background-color: white; /* Highlight the active dot */
+}
+
+.overlay {
+  position: absolute; /* Position the overlay on top of the image */
+  top: 48%; /* Center vertically */
+  left: 2%; /* Align to the left side */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  text-align: left; /* Align text to the left */
+  color: white; /* Text color */
+  z-index: 10; /* Ensure the overlay is above the image */
+  width: 40%; /* Restrict the width of the overlay to fit within the image */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.overlay_text {
+  font-size: 3.7rem; /* Adjust font size for better fit */
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Merriweather", serif;
+  word-wrap: break-word;
+  color: rgb(233, 229, 229); /* Ensure long words break to the next line */
+}
+
+.overlay_description {
+  font-size: 1.2rem; /* Reduce font size to fit within the image */
+  line-height: 1.8; /* Adjust line height for better readability */
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  word-wrap: break-word;
+  color: rgb(233, 229, 229); /* Ensure long words break to the next line */
+}
+
+.overlay_button {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 170px;
+}
+
+.overlay_button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000; /* Fully opaque on hover */
+}
+
+.footer {
+  background-color: #000; /* Black background */
+  color: white; /* White text */
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 260px;
+}
+
+.footer_about {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer_about h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer_about p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer_links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer_links h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer_links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_links ul li {
+  margin-bottom: 8px;
+}
+
+.footer_links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer_links ul li a:hover {
+  color: #00bcd4; /* Highlight color */
+}
+
+.footer_social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer_social h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.social_icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social_icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social_icons a:hover {
+  color: #00bcd4; /* Highlight color */
+}
+
+.footer_bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
 }

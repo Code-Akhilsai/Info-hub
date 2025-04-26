@@ -4,7 +4,9 @@ import Spline from "@splinetool/react-spline";
 const About = () => {
   return (
     <section>
-      <h1 className={styles.About_title}>About</h1>
+      <h1 className={styles.About_title} id="about">
+        About
+      </h1>
       <div className={styles.About_cont}>
         <div className={styles.SplineContainer2}>
           <Spline scene="https://prod.spline.design/3SNPatP3QFPy2-7H/scene.splinecode" />{" "}
