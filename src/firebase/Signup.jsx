@@ -1,8 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Signup.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { auth, googleProvider } from "./firebase";
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
+  const nav = useNavigate();
+  const loginp = () => {
+    nav("/login");
+  };
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  // Handle Email/Password Signup
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      console.log("User signed up:", userCredential.user);
+      alert("Signup successful!");
+    } catch (error) {
+      console.error("Error signing up:", error.message);
+      alert(error.message);
+    }
+  };
+
+  // Handle Google Signup
+  const handleGoogleSignup = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      console.log("Google user signed up:", result.user);
+      alert("Google signup successful!");
+    } catch (error) {
+      console.error("Error with Google signup:", error.message);
+      alert(error.message);
+    }
+  };
+
   return (
     <div className="page-container">
       <div className="background-stars"></div>
@@ -20,17 +59,21 @@ function Signup() {
 
         <h2 className="login-title">Create an account</h2>
 
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleSignup}>
           <input
             type="email"
             placeholder="Email"
             className="input-field"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
           <input
             type="password"
             placeholder="Password"
             className="input-field"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
           <button type="submit" className="signin-button">
@@ -38,7 +81,7 @@ function Signup() {
           </button>
         </form>
 
-        <button className="google-signin-button">
+        <button className="google-signin-button" onClick={handleGoogleSignup}>
           <img
             src="https://www.google.com/favicon.ico"
             alt="Google"
@@ -48,7 +91,10 @@ function Signup() {
         </button>
 
         <p className="signup-text">
-          Already have an account? <span className="signup-link">log in</span>
+          Already have an account?{" "}
+          <span className="signup-link" onClick={loginp}>
+            Log in
+          </span>
         </p>
       </div>
     </div>

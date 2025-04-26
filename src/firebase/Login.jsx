@@ -1,8 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { auth, googleProvider } from "./firebase";
+import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  // Handle Email/Password Login
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      console.log("User logged in:", userCredential.user);
+      alert("Login successful!");
+      navigate("/"); // Redirect to home page after login
+    } catch (error) {
+      console.error("Error logging in:", error.message);
+      alert(error.message);
+    }
+  };
+
+  // Handle Google Login
+  const handleGoogleLogin = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      console.log("Google user logged in:", result.user);
+      alert("Google login successful!");
+      navigate("/"); // Redirect to home page after login
+    } catch (error) {
+      console.error("Error with Google login:", error.message);
+      alert(error.message);
+    }
+  };
+
   return (
     <div className="page-container">
       <div className="background-stars"></div>
@@ -20,17 +58,21 @@ function LoginPage() {
 
         <h2 className="login-title">Welcome Back!</h2>
 
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleLogin}>
           <input
             type="email"
             placeholder="Email"
             className="input-field"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
           <input
             type="password"
             placeholder="Password"
             className="input-field"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
           <button type="submit" className="signin-button">
@@ -38,17 +80,23 @@ function LoginPage() {
           </button>
         </form>
 
-        <button className="google-signin-button">
+        <button className="google-signin-button" onClick={handleGoogleLogin}>
           <img
             src="https://www.google.com/favicon.ico"
             alt="Google"
             className="google-icon"
           />
-          Sign up with Google
+          Log in with Google
         </button>
 
         <p className="signup-text">
-          Don't have an account? <span className="signup-link">Sign up</span>
+          Don't have an account?{" "}
+          <span
+            className="signup-link"
+            onClick={() => navigate("/signup")} // Navigate to signup page
+          >
+            Sign up
+          </span>
         </p>
       </div>
     </div>
