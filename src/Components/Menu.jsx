@@ -1,6 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./cstyles.module.css";
 
 const Menu = () => {
+  const nav = useNavigate();
+  const handleClick = () => {
+    nav("/signup");
+  };
+
+  const loginClick = () => {
+    nav("/login");
+  };
   return (
     <section>
       <div className={styles.Menu_cont}>
@@ -23,8 +32,12 @@ const Menu = () => {
         </nav>
 
         <div className={styles.Buttons}>
-          <button className={styles.TransparentButton}>Signup</button>
-          <button className={styles.TransparentButton}>Login</button>
+          <button className={styles.TransparentButton} onClick={handleClick}>
+            Signup
+          </button>
+          <button className={styles.TransparentButton} onClick={loginClick}>
+            Login
+          </button>
         </div>
       </div>
     </section>

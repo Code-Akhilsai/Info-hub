@@ -8,6 +8,18 @@ const Home = () => {
       <Intro />
       <Featured />
       <About />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };

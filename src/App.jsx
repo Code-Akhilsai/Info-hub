@@ -4,6 +4,8 @@ import Home from "./Components/Home";
 import Clubs from "./Components/Clubs";
 import Gallery from "./Components/Gallery";
 import Layout from "./Components/Layout";
+import Signup from "./firebase/SignUp";
+import Login from "./firebase/Login";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="clubs" element={<Clubs />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
       </Route>
     </Routes>
   );
