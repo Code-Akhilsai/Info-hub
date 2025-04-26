@@ -8,7 +8,7 @@ const Menu = () => {
         <nav>
           <ul className={styles.Menu_list}>
             <li>
-              <a href="#home">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="/clubs">Clubs</a>
