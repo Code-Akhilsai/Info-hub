@@ -1,16 +1,20 @@
-<<<<<<< HEAD
-# React + Vite
+# 📚 InfoHub – College Clubs Information Portal
+Welcome to InfoHub, a centralized platform to discover and manage information about various college clubs.
+Built to make it easier for students to explore clubs, join activities, and stay updated on upcoming events!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+🏫 Browse all active college clubs
 
-Currently, two official plugins are available:
+📰 View latest news and events by clubs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👥 Join clubs directly from the portal
 
-## Expanding the ESLint configuration
+🔎 Search and filter clubs by category (e.g., Technical, Cultural, Sports)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Info-hub
->>>>>>> 670c365a2282bb562949f9cec7d7e04fa4647b95
+
+🛠️ Tech Stack
+Frontend: React.js 
+
+Backend: Firebase
+
+Version Control: Git & GitHub
