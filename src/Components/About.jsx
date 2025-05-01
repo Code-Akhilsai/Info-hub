@@ -9,7 +9,11 @@ const About = () => {
       </h1>
       <div className={styles.About_cont}>
         <div className={styles.SplineContainer2}>
-          <Spline scene="https://prod.spline.design/3SNPatP3QFPy2-7H/scene.splinecode" />{" "}
+          <Spline
+            scene="https://prod.spline.design/Su3CynzA9Gjse6tO/scene.splinecode"
+            width={150}
+            height={150}
+          />{" "}
         </div>
         <p className={styles.About_text}>
           Infohub is a platform designed to connect students with clubs,

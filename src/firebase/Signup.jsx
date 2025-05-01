@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Signup.css";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Lottie from "lottie-react"; // Import Lottie
+import animationData from "../assets/animations/ani.json"; // Path to your Lottie JSON file
+
 import { auth, googleProvider } from "./firebase";
 import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
@@ -49,10 +51,16 @@ function Signup() {
       <div className="login-box">
         <div className="logo-wrapper">
           <div className="logo-lottie">
-            <DotLottieReact
-              src="https://lottie.host/ff3edc04-8601-44c7-9642-eb0dba847e73/Kfqzs4kDEA.lottie"
-              loop
-              autoplay
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              autoplay={true}
+              style={{
+                width: "100px",
+                height: "100px",
+                marginLeft: 40,
+                marginTop: -7,
+              }} // Adjust size as needed
             />
           </div>
         </div>

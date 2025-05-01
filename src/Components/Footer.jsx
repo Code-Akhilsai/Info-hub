@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./cstyles.module.css";
+import { AiFillInstagram } from "react-icons/ai";
+import { MdOutlineFacebook } from "react-icons/md";
+import { IoLogoLinkedin } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -34,16 +37,14 @@ const Footer = () => {
           <h4>Follow Us</h4>
           <div className={styles.social_icons}>
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <i className="fab fa-facebook-f"></i>
+              <MdOutlineFacebook />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <i className="fab fa-twitter"></i>
-            </a>
+
             <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              <i className="fab fa-instagram"></i>
+              <AiFillInstagram />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-              <i className="fab fa-linkedin-in"></i>
+              <IoLogoLinkedin />
             </a>
           </div>
         </div>

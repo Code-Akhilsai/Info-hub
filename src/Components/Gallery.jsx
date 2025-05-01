@@ -23,6 +23,7 @@ const Gallery = () => {
               src={image}
               alt={`Gallery ${index + 1}`}
               className={styles.gallery_image}
+              loading="lazy"
             />
           </div>
         ))}

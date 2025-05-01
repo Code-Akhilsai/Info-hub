@@ -82,6 +82,7 @@ const Clubs = () => {
               src={club.image}
               alt={club.title}
               className={styles.club_image}
+              loading="lazy"
             />
             <h3 className={styles.club_title}>{club.title}</h3>
             <p className={styles.club_description}>{club.description}</p>
