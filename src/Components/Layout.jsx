@@ -6,16 +6,16 @@ import Footer from "./Footer";
 const Layout = () => {
   const location = useLocation();
 
-  // Define routes where the Menu and Footer should not be displayed
-  const hideMenuAndFooterRoutes = ["/login", "/signup"];
+  // Define routes where the Footer should not be displayed
+  const hideFooterRoutes = ["/login", "/signup"];
 
   return (
     <>
-      {/* Conditionally render the Menu */}
-      {!hideMenuAndFooterRoutes.includes(location.pathname) && <Menu />}
+      {/* Always render the Menu */}
+      <Menu />
       <Outlet />
       {/* Conditionally render the Footer */}
-      {!hideMenuAndFooterRoutes.includes(location.pathname) && <Footer />}
+      {!hideFooterRoutes.includes(location.pathname) && <Footer />}
     </>
   );
 };
