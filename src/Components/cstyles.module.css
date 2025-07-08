@@ -45,6 +45,10 @@
   gap: 2px; /* Adds a 10px gap between the buttons */
   margin-top: 10px; /* Optional: Adds spacing above the buttons */
 }
+
+#icon {
+  display: none;
+}
 .TransparentButton {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
@@ -85,7 +89,6 @@
   font-weight: 600;
   font-size: 3.9vw;
   color: white;
-
   margin-top: 20px;
 }
 
@@ -528,4 +531,79 @@
 .feature_item p {
   font-size: 1rem;
   color: #666;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .Menu_cont {
+    margin-top: -23px;
+  }
+  .Menu_list {
+    display: none;
+  }
+
+  .Buttons {
+    display: none;
+  }
+
+  #icon {
+    display: initial;
+    margin-right: -2%;
+    margin-top: -3px;
+  }
+  .Intro {
+    flex-direction: column;
+  }
+  .SplineContainer {
+    height: 57vh;
+    margin-top: -65px;
+  }
+  .Intro_title {
+    font-weight: 600;
+    font-size: 16vw;
+    margin-top: 5px;
+  }
+  .Intro_subtitle {
+    line-break: anywhere;
+  }
+  .overlay {
+    left: 12%;
+    text-align: center;
+    width: 55%;
+  }
+  .overlay_text {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .overlay_description {
+    font-size: 1rem;
+  }
+
+  .About_cont {
+    flex-direction: column;
+  }
+  .SplineContainer2 {
+    height: 53vh;
+    margin-left: -16%;
+    width: 111%;
+  }
+  .About_text {
+    line-break: anywhere;
+  }
+  .footer {
+    text-align: center;
+    margin-top: -195px;
+  }
+
+  .footer_container {
+    gap: 60px;
+  }
+  .footer_about p {
+    font-size: 1.3rem;
+  }
+  .social_icons {
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+  }
 }

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./cstyles.module.css";
+import { FiMenu } from "react-icons/fi";
 
 const Menu = () => {
   const nav = useNavigate();
@@ -43,6 +44,7 @@ const Menu = () => {
             Login
           </button>
         </div>
+        <FiMenu size={23} id={styles.icon} />
       </div>
     </section>
   );

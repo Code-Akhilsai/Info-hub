@@ -11,8 +11,8 @@ const About = () => {
         <div className={styles.SplineContainer2}>
           <Spline
             scene="https://prod.spline.design/Su3CynzA9Gjse6tO/scene.splinecode"
-            width={150}
-            height={150}
+            width={10}
+            height={10}
           />{" "}
         </div>
         <p className={styles.About_text}>
