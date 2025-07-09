@@ -533,7 +533,7 @@
   color: #666;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .burgericon {
     display: none;
     position: absolute;
@@ -683,5 +683,18 @@
     margin-top: 12%;
     display: flex;
     justify-content: center;
+  }
+
+  .clubs_container {
+    margin-bottom: 100px;
+  }
+
+  .gallery_container {
+    margin-bottom: 100px;
+  }
+
+  .gallery_grid {
+    display: flex;
+    flex-direction: column;
   }
 }

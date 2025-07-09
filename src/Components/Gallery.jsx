@@ -10,7 +10,7 @@ import img8 from "../assets/gallery/img8.jpg";
 import img9 from "../assets/gallery/img9.jpg";
 
 const Gallery = () => {
-  const images = [img6, img2, img3, img4, img5, img1, img7, img8, img9]; // Add your image imports here
+  const images = [img6, img2, img3, img4, img5, img1, img7, img8, img9];
 
   return (
     <div className={styles.gallery_container}>
