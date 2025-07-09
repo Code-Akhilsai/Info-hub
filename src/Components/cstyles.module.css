@@ -167,9 +167,9 @@
   align-items: center;
   width: 200%;
   max-width: 600px;
-  height: 400px;
+  height: 380px;
   margin: 20px auto;
-  margin-left: -1%;
+  margin-left: -10%;
   overflow: hidden;
 }
 
@@ -549,7 +549,7 @@
     right: 0;
     width: 60%;
     height: 100vh;
-    background-color: rgb(16, 16, 17);
+    background-color: rgb(11, 11, 11);
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
@@ -612,6 +612,9 @@
       display: none;
     }
   }
+
+  /*-----*/
+
   .Menu_cont {
     margin-top: -23px;
   }
@@ -637,11 +640,12 @@
   }
   .Intro_title {
     font-weight: 600;
-    font-size: 16vw;
+    font-size: 14vw;
     margin-top: 5px;
   }
   .Intro_subtitle {
     line-break: anywhere;
+    font-size: 1.2rem;
   }
   .overlay {
     left: 12%;
@@ -649,7 +653,7 @@
     width: 55%;
   }
   .overlay_text {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     text-align: center;
   }
 
@@ -661,9 +665,10 @@
     flex-direction: column;
   }
   .SplineContainer2 {
-    height: 53vh;
-    margin-left: -16%;
-    width: 111%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
   .About_text {
     line-break: anywhere;
@@ -680,7 +685,7 @@
     font-size: 1.3rem;
   }
   .social_icons {
-    margin-top: 12%;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
   }
