@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./SignUp.css";
 import Lottie from "lottie-react"; // Import Lottie
 import animationData from "../assets/animations/ani2.json";

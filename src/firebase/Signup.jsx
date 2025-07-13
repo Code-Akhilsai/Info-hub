@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Signup.css";
 import Lottie from "lottie-react"; // Import Lottie
 import animationData from "../assets/animations/ani.json"; // Path to your Lottie JSON file
