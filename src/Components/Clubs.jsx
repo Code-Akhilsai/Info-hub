@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./cstyles.module.css";
 import photography from "../assets/photo.jpg";
 import cultural from "../assets/cultural2.jpg";

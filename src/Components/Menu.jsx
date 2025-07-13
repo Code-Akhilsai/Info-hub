@@ -3,8 +3,6 @@ import styles from "./cstyles.module.css";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
 
 const Menu = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);

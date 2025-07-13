@@ -18,7 +18,10 @@ const Intro = () => {
         </div>
 
         <div className={styles.SplineContainer}>
-          <Spline scene="https://prod.spline.design/3bKaZJ4oG9sYgruW/scene.splinecode" />
+          {/*  <Spline
+            scene="https://prod.spline.design/3bKaZJ4oG9sYgruW/scene.splinecode"
+            loading="lazy"
+          />*/}
         </div>
       </section>
     </>

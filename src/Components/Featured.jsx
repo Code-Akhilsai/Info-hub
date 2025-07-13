@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./cstyles.module.css";
 
 // Import images from the src/assets folder
