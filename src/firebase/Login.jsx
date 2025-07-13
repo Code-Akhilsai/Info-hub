@@ -5,6 +5,7 @@ import animationData from "../assets/animations/ani2.json";
 import { auth, googleProvider } from "./firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -88,11 +89,7 @@ function LoginPage() {
         </form>
 
         <button className="google-signin-button" onClick={handleGoogleLogin}>
-          <img
-            src="https://www.google.com/favicon.ico"
-            alt="Google"
-            className="google-icon"
-          />
+          <FcGoogle size={20} />
           Log in with Google
         </button>
 
