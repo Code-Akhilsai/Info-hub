@@ -117,12 +117,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Google Icon */
-.google-icon {
-  width: 18px;
-  height: 18px;
-}
-
 /* Sign Up / Log In text */
 .signup-text {
   color: rgba(255, 255, 255, 0.6);

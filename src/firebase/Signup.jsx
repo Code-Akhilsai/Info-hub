@@ -6,6 +6,7 @@ import animationData from "../assets/animations/ani.json"; // Path to your Lotti
 import { auth, googleProvider } from "./firebase";
 import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
 
 function Signup() {
   const nav = useNavigate();
@@ -90,11 +91,7 @@ function Signup() {
         </form>
 
         <button className="google-signin-button" onClick={handleGoogleSignup}>
-          <img
-            src="https://www.google.com/favicon.ico"
-            alt="Google"
-            className="google-icon"
-          />
+          <FcGoogle size={20} />
           Sign up with Google
         </button>
 
