@@ -111,10 +111,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px; /* Limits the maximum width */
-  height: 600px; /* Sets the height of the container */
-  margin: 10px auto; /* Centers the container */
-  overflow: hidden; /* Ensures the content doesn't overflow */
+  max-width: 600px;
+  height: 600px;
+  margin: 10px auto;
+  overflow: hidden;
 }
 
 /* about*/
