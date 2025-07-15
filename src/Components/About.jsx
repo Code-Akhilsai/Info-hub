@@ -1,5 +1,6 @@
 import styles from "./cstyles.module.css";
-import Spline from "@splinetool/react-spline";
+import Lottie from "lottie-react"; // Import Lottie
+import animationData from "../assets/animations/ani3.json";
 
 const About = () => {
   return (
@@ -9,10 +10,12 @@ const About = () => {
       </h1>
       <div className={styles.About_cont}>
         <div className={styles.SplineContainer2}>
-          {/* <Spline
-            scene="https://prod.spline.design/vEFcTaBOD7yFGvec/scene.splinecode"
-            loading="lazy"
-          />{" "}*/}
+          <Lottie
+            animationData={animationData}
+            className="lottiee"
+            loop={true}
+            autoplay={true}
+          />
         </div>
         <p className={styles.About_text}>
           Infohub is a platform designed to connect students with clubs,

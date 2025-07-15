@@ -1,5 +1,6 @@
 import styles from "./cstyles.module.css";
-import Spline from "@splinetool/react-spline";
+import Lottie from "lottie-react"; // Import Lottie
+import animationData from "../assets/animations/ani4.json";
 
 const Intro = () => {
   return (
@@ -18,10 +19,12 @@ const Intro = () => {
         </div>
 
         <div className={styles.SplineContainer}>
-          {/*  <Spline
-            scene="https://prod.spline.design/3bKaZJ4oG9sYgruW/scene.splinecode"
-            loading="lazy"
-          />*/}
+          <Lottie
+            className="lottiee"
+            animationData={animationData}
+            loop={true}
+            autoplay={true}
+          />
         </div>
       </section>
     </>

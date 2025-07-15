@@ -100,6 +100,7 @@
   line-height: 1.9; /* Adds spacing between lines */
   margin-top: -40px;
   text-align: justify; /* Makes the text look neat and aligned */
+  font-display: swap;
 }
 
 .SplineContainer {
@@ -635,9 +636,11 @@
     flex-direction: column;
   }
   .SplineContainer {
-    height: 57vh;
-    margin-top: -65px;
+    height: 49vh;
+    margin-top: -60px;
+    width: 90%;
   }
+
   .Intro_title {
     font-weight: 600;
     font-size: 14vw;
@@ -650,7 +653,7 @@
   .overlay {
     left: 12%;
     text-align: center;
-    width: 55%;
+    width: 65%;
   }
   .overlay_text {
     font-size: 2.2rem;
@@ -665,10 +668,19 @@
     flex-direction: column;
   }
   .SplineContainer2 {
-    height: 40vh;
+    height: 30vh;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 94%;
+  }
+
+  @media (min-width: 530px) {
+    .SplineContainer {
+      margin-top: -10px;
+    }
+    .SplineContainer2 {
+      height: 50vh;
+    }
   }
   .About_text {
     line-break: anywhere;
