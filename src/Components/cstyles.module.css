@@ -105,8 +105,8 @@
 
 .SplineContainer {
   background-color: black; /* Sets the background to black */
-  border-radius: 10px; /* Optional: Adds rounded corners */
-  padding: 10px; /* Optional: Adds padding around the model */
+  border-radius: 10px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
