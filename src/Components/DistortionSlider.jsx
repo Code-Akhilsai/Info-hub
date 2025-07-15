@@ -6,7 +6,6 @@ const DistortionSlider = () => {
   const sliderRef = useRef(null);
 
   useEffect(() => {
-    // Initialize PixiJS Application
     const app = new PIXI.Application({
       view: sliderRef.current,
       width: window.innerWidth,
@@ -14,14 +13,12 @@ const DistortionSlider = () => {
       transparent: true,
     });
 
-    // Images for the slider
     const images = [
       "/assets/cultural.png",
       "/assets/photography.png",
       "/assets/sports.png",
     ];
 
-    // Displacement map for distortion
     const displacementTexture = PIXI.Texture.from(
       "/assets/displacement-map.png"
     );
