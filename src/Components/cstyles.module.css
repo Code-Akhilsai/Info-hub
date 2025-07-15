@@ -97,9 +97,9 @@
   font-weight: 400;
   font-size: 1.2rem;
   color: white;
-  line-height: 1.9; /* Adds spacing between lines */
+  line-height: 1.9;
   margin-top: -40px;
-  text-align: justify; /* Makes the text look neat and aligned */
+  text-align: justify;
   font-display: swap;
 }
 
