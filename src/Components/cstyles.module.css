@@ -104,13 +104,13 @@
 }
 
 .SplineContainer {
-  background-color: black; /* Sets the background to black */
+  background-color: black;
   border-radius: 10px;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Adjusts the width */
+  width: 100%;
   max-width: 600px; /* Limits the maximum width */
   height: 600px; /* Sets the height of the container */
   margin: 10px auto; /* Centers the container */
