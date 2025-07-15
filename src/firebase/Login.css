@@ -83,7 +83,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Primary "Sign up" button styled like input */
 .signin-button {
   background: rgba(255, 255, 255, 0.1);
   color: white;
@@ -101,7 +100,6 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Google Sign in button */
 .google-signin-button {
   background: rgba(255, 255, 255, 0.1);
   color: white;

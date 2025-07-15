@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./SignUp.css";
-import Lottie from "lottie-react"; // Import Lottie
+import Lottie from "lottie-react";
 import animationData from "../assets/animations/ani2.json";
 import { auth, googleProvider } from "./firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
@@ -12,7 +12,6 @@ function LoginPage() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  // Handle Email/Password Login
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -23,7 +22,7 @@ function LoginPage() {
       );
       console.log("User logged in:", userCredential.user);
       alert("Login successful!");
-      navigate("/"); // Redirect to home page after login
+      navigate("/");
     } catch (error) {
       console.error("Error logging in:", error.message);
       alert(error.message);
@@ -36,7 +35,7 @@ function LoginPage() {
       const result = await signInWithPopup(auth, googleProvider);
       console.log("Google user logged in:", result.user);
       alert("Google login successful!");
-      navigate("/"); // Redirect to home page after login
+      navigate("/");
     } catch (error) {
       console.error("Error with Google login:", error.message);
       alert(error.message);
@@ -95,10 +94,7 @@ function LoginPage() {
 
         <p className="signup-text">
           Don't have an account?{" "}
-          <span
-            className="signup-link"
-            onClick={() => navigate("/signup")} // Navigate to signup page
-          >
+          <span className="signup-link" onClick={() => navigate("/signup")}>
             Sign up
           </span>
         </p>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Signup.css";
-import Lottie from "lottie-react"; // Import Lottie
-import animationData from "../assets/animations/ani.json"; // Path to your Lottie JSON file
+import Lottie from "lottie-react";
+import animationData from "../assets/animations/ani.json";
 
 import { auth, googleProvider } from "./firebase";
 import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";

@@ -9,7 +9,7 @@ import drama from "../assets/drama.jpg";
 import envi from "../assets/environ.jpg";
 
 const Clubs = () => {
-  const baseFormLink = "https://forms.gle/sAtTseZu5PFWVxVj6"; // Replace with your actual Google Form link
+  const baseFormLink = "https://forms.gle/sAtTseZu5PFWVxVj6";
 
   const clubs = [
     {
