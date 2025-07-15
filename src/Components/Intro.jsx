@@ -1,5 +1,5 @@
 import styles from "./cstyles.module.css";
-import Lottie from "lottie-react"; // Import Lottie
+import Lottie from "lottie-react";
 import animationData from "../assets/animations/ani4.json";
 
 const Intro = () => {
