@@ -388,20 +388,18 @@
 .club_card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Border for glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   padding: 20px;
   width: 300px;
   text-align: center;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2),
-    /* Main shadow */ 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .club_card:hover {
-  transform: translateY(-10px); /* Lift effect on hover */
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3),
-    /* Stronger shadow on hover */ 0 8px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .club_image {
@@ -447,7 +445,7 @@
 .gallery_container {
   padding: 20px;
   text-align: center;
-  background-color: #000; /* Black background */
+  background-color: #000;
   color: white;
 }
 
@@ -459,8 +457,8 @@
 
 .gallery_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-  gap: 20px; /* Spacing between images */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   padding: 10px;
 }
 
