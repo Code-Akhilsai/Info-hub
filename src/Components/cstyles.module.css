@@ -218,27 +218,27 @@
 .dot {
   width: 12px;
   height: 12px;
-  background-color: gray; /* Change to white for better visibility */
-  border: 1px solid black; /* Optional: Add a border for contrast */
+  background-color: gray;
+  border: 1px solid black;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .dot:hover {
-  background-color: gray; /* Change hover color for better feedback */
+  background-color: gray;
 }
 
 .active_dot {
-  background-color: white; /* Highlight the active dot */
+  background-color: white;
 }
 
 .overlay {
-  position: absolute; /* Position the overlay on top of the image */
-  top: 48%; /* Center vertically */
-  left: 2%; /* Align to the left side */
-  transform: translateY(-50%); /* Adjust for vertical centering */
-  text-align: left; /* Align text to the left */
+  position: absolute;
+  top: 48%;
+  left: 2%;
+  transform: translateY(-50%);
+  text-align: left;
   color: white; /* Text color */
   z-index: 10; /* Ensure the overlay is above the image */
   width: 40%; /* Restrict the width of the overlay to fit within the image */
