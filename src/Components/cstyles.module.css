@@ -476,14 +476,14 @@
 }
 
 .gallery_image:hover {
-  transform: scale(1.1); /* Zoom effect on hover */
+  transform: scale(1.1);
 }
 
 /*about */
 .about_container {
   padding: 40px 20px;
 
-  color: white; /* Dark text */
+  color: white;
   text-align: center;
   font-family: "Arial", sans-serif;
 }
