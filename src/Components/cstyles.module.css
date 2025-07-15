@@ -205,8 +205,8 @@
 
 .featured_dots {
   display: flex;
-  flex-direction: column; /* Arrange dots vertically */
-  justify-content: center; /* Center dots vertically */
+  flex-direction: column;
+  justify-content: center;
   position: absolute; /* Position dots relative to the image container */
   right: 10px; /* Place dots on the right side of the image */
   top: 50%; /* Center dots vertically in the container */
