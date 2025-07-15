@@ -365,7 +365,7 @@
 }
 
 .social_icons a:hover {
-  color: #00bcd4; /* Highlight color */
+  color: #00bcd4;
 }
 
 .footer_bottom {
@@ -386,8 +386,8 @@
 }
 
 .club_card {
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Glass effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2); /* Border for glass effect */
   border-radius: 15px;
   padding: 20px;
