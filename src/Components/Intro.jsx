@@ -14,7 +14,7 @@ const Intro = () => {
             societies at their university.
             <br /> It provides a centralized hub for students to discover, join,
             and engage with various clubs, <br />
-            enhancing their campus experience.
+            enhancing their campus experience
           </p>
         </div>
 
