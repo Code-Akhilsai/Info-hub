@@ -5,7 +5,7 @@ import styles from "./cstyles.module.css";
 import culturalImage from "../assets/cultural.png";
 import photographyImage from "../assets/photography.png";
 import sportsImage from "../assets/sports.png";
-import tech from "../assets/techc.jpg";
+import tech from "../assets/techc.webp";
 import { useNavigate } from "react-router-dom";
 
 const Featured = () => {

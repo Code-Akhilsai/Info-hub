@@ -1,12 +1,12 @@
 import styles from "./cstyles.module.css";
-import photography from "../assets/photo.jpg";
-import cultural from "../assets/cultural2.jpg";
-import sports from "../assets/sports2.jpg";
-import tech from "../assets/tech.jpg";
-import music from "../assets/music.jpg";
-import literature from "../assets/literature.jpg";
+import photography from "../assets/photo.webp";
+import cultural from "../assets/cultural2.webp";
+import sports from "../assets/sports2.webp";
+import tech from "../assets/tech.webp";
+import music from "../assets/music.webp";
+import literature from "../assets/literature.webp";
 import drama from "../assets/drama.jpg";
-import envi from "../assets/environ.jpg";
+import envi from "../assets/environ.webp";
 
 const Clubs = () => {
   const baseFormLink = "https://forms.gle/sAtTseZu5PFWVxVj6";
