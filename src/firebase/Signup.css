@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  scroll-behavior: smooth;
 }
 .page-container {
   height: 100vh;
