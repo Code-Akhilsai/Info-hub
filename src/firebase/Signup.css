@@ -115,8 +115,5 @@ body {
   font-size: 18px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .password-wrapper {
-    width: 98%;
-  }
+@media (min-width: 320px) and (max-width: 375px) {
 }
