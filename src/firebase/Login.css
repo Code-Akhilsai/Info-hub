@@ -13,26 +13,6 @@ body {
   margin-top: -3%;
 }
 
-/* Background animations */
-@keyframes moveStars {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
-@keyframes starTwinkle {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Login box with glass effect */
 .login-box {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -47,7 +27,6 @@ body {
   z-index: 1;
 }
 
-/* Centering logo */
 .logo-wrapper {
   display: flex;
   justify-content: center;
@@ -55,19 +34,16 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Logo lottie animation */
 .logo-lottie {
   width: 180px;
   height: 80px;
 }
 
-/* Title */
 .login-title {
   color: white;
   margin-bottom: 1rem;
 }
 
-/* Input fields */
 .input-field {
   width: 91%;
   padding: 0.8rem;
