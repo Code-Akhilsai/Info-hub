@@ -141,6 +141,6 @@ body {
 }
 @media (min-width: 320px) and (max-width: 375px) {
   .password-wrapper {
-    width: 100%;
+    width: 98%;
   }
 }
