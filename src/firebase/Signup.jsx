@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
-function Signup() {
+function SignUp() {
   const nav = useNavigate();
   const loginp = () => {
     nav("/login");
@@ -120,4 +120,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default SignUp;
