@@ -54,7 +54,7 @@ const Footer = () => {
         <br />
         <br />
         <br />
-        <p>Developed by Akhil sai</p>
+        <p>Developed by Akhil Sai</p>
       </div>
     </footer>
   );
