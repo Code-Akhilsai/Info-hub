@@ -51,7 +51,9 @@ const Footer = () => {
       </div>
       <div className={styles.footer_bottom}>
         <p>&copy; 2025 InfoHub. All rights reserved.</p>
-
+        <br />
+        <br />
+        <br />
         <p>Developed by Akhil sai</p>
       </div>
     </footer>
